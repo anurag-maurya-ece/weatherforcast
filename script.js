@@ -289,7 +289,8 @@ async function fetchWeather() {
   resultDiv.innerHTML = '<div style="font-size: 18px; font-weight: 600;">🌍 Fetching weather data...</div>';
 
   try {
-    const url = `http://127.0.0.1:5000/weather?city=${encodeURIComponent(city)}`;
+  // Use relative URL so the frontend works when served from the same origin in production
+  const url = `/weather?city=${encodeURIComponent(city)}`;
     const resp = await fetch(url);
 
     if (!resp.ok) {
