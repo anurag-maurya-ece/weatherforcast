@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtualenv
+venv/
+.env
+.env.*
+
+# Editor directories and files
+.vscode/
+.idea/
+.DS_Store
+
+# Logs
+*.log
+
+# Byte-compiled / optimized
+*.pyc
+
+# macOS
+.DS_Store
+
+# node modules (if any)
+node_modules/
+
+# coverage
+htmlcov/
+.coverage
+
+# pipenv
+Pipfile.lock
+
+# pyenv
+.python-version
